@@ -2,26 +2,26 @@ package com.company;
 
 public class accntNumArry {
     Accounts account = new Accounts();
-    int entrdAccntNum;
-    int[] accntNums;
-    int Account1 = 26028422;
-    int Account2 = 0;
-    int Account3 = 0;
-    int Account4 = 0;
-    int Account5 = 0;
-    int Account6 = 0;
-    int Account7 = 0;
-    int Account8 = 0;
-    int Account9 = 0;
-    int Account10 = 0;
-    int Account11 = 0;
+    long entrdAccntNum;
+    long[] accntNums;
+    long Account1 = 26028422;
+    long Account2 = 0;
+    long Account3 = 0;
+    long Account4 = 0;
+    long Account5 = 0;
+    long Account6 = 0;
+    long Account7 = 0;
+    long Account8 = 0;
+    long Account9 = 0;
+    long Account10 = 0;
+    long Account11 = 0;
 
     public void accntArray(){
-        accntNums = new int[]{Account1, Account2, Account3, Account4, Account5,Account6, Account7, Account8, Account9, Account10, Account11};
+        accntNums = new long[]{Account1, Account2, Account3, Account4, Account5,Account6, Account7, Account8, Account9, Account10, Account11};
 
     }
 
-    public void setAccount(int num) {
+   // public void setAccount(long num) {
         // = num;
-    }
+    //}
 }
