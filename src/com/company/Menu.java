@@ -13,9 +13,10 @@ public class Menu {
             menuChoice = menuScan.nextInt();
             if(menuChoice == 1){
                 Accounts account = new Accounts();
-            } else if(menuChoice == 2){
-                accntNumArry accounts = new accntNumArry();
-            }
+                break;
+            } //else if(menuChoice == 2){
+                //this will be the option to create an account with an assigned account number but customizable pin number
+            //}
         }while(menuChoice != 3);
 
     }
