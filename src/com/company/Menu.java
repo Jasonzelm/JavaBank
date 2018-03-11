@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Menu {
     createAccount newAccount;
     public Menu(){
-        //boolean variable automatically set to false that will keep the while loop running until set to true
+
         boolean quit = false;
-        //variable to store entered choice through a scanner
+
         int scanned ;
-        //Scanner variable in
+
         Scanner in = new Scanner(System.in);
         printMenu();
 
