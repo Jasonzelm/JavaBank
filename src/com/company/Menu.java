@@ -25,8 +25,7 @@ public class Menu {
 
                     break;
                 case 2:
-                    System.out.println("Enter a 5 digit number (this will be your account number");
-                    int num = in.nextInt();
+                    newAccount.optionChosen();
                     break;
                 case 3:
                     System.out.println("GoodBye");
