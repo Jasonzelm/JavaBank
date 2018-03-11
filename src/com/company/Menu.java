@@ -3,6 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class Menu {
+    createAccount newAccount;
     public Menu(){
         //boolean variable automatically set to false that will keep the while loop running until set to true
         boolean quit = false;
@@ -24,7 +25,8 @@ public class Menu {
 
                     break;
                 case 2:
-
+                    System.out.println("Enter a 5 digit number (this will be your account number");
+                    int num = in.nextInt();
                     break;
                 case 3:
                     System.out.println("GoodBye");

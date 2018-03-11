@@ -4,7 +4,8 @@ package com.company;
 import java.util.ArrayList;
 
 public class arrayList {
-    ArrayList<Integer> account = new ArrayList<Integer>();
+    ArrayList<createAccount> account = new ArrayList<createAccount>();
+
     public arrayList(){
 
     }
