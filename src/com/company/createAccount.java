@@ -3,30 +3,31 @@ import java.util.Scanner;
 
 public class createAccount {
     private static Scanner scanner = new Scanner(System.in);
-    int accountNum1;
+    String accountName1;
     int pinNum1;
 
-    public createAccount(int accountNum, int pinNum){
-        this.accountNum1 = accountNum;
+    public createAccount(String accountName, int pinNum){
+        this.accountName1 = accountName;
         this.pinNum1 = pinNum;
     }
 
-    public int getAccountNum() {
-        return accountNum1;
+    public String getAccountName() {
+        return accountName1;
     }
 
     public int getPinNum() {
         return pinNum1;
     }
 
-    public static createAccount setAccount(int accountNum, int pinNum){
-        return new createAccount(accountNum, pinNum);
+    public static createAccount setAccount(String accountName, int pinNum){
+        return new createAccount(accountName, pinNum);
     }
 
     public static void optionChosen(){
-        System.out.println("Enter a 6 digit number, this will be your account number");
-        int accntNum = scanner.nextInt();
-        System.out.println("enter a 3 digit number, this will be your pin number");
+        System.out.println("Enter your full name, this will be the name under your account");
+        String accntName = scanner.nextLine();
+        System.out.println("enter a pin number, this will be your pin number for your account");
         int pinNum = scanner.nextInt();
+        setAccount(accntName,pinNum);
     }
 }
