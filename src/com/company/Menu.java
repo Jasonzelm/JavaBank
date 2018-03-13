@@ -23,10 +23,11 @@ public class Menu {
                     printMenu();
                     break;
                 case 1:
-
+                    array.printArray();
                     break;
                 case 2:
                     //access existing account
+                    break;
                 case 3:
                     newAccount.optionChosen();
                     break;

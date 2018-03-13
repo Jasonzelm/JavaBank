@@ -2,35 +2,25 @@ package com.company;
 import java.util.Scanner;
 
 public class createAccount {
-    public arrayList array;
+    public static arrayList array;
     private static Scanner scanner = new Scanner(System.in);
-    String accountName1;
-    String pin;
+    private String accountName;
+    private String pin;
 
-    public createAccount(String accountName, String pin){
-        this.accountName1 = accountName;
+    public createAccount(String fullName, String pin){
+        this.accountName = fullName;
         this.pin = pin;
     }
 
-    public String getAccountName() {
-        return accountName1;
-    }
-
-    public String getPin() {
-        return pin;
-    }
-
-    public static createAccount setAccount(String accountName, String pin){
-        return new createAccount(accountName, pin);
-    }
-
     public static void optionChosen(){
-        System.out.println("Enter your full name, this will be the name under your account");
-        String accntName = scanner.nextLine();
-        System.out.println("enter a password, this will be the password for your account");
+        System.out.println("Enter your full name: ");
+        String name = scanner.nextLine();
+        System.out.println("Enter the password you want to use for this account");
         String pin = scanner.nextLine();
-        if(array.findAccount(account)>=0)
-
-
+        createAccount newAccount = new createAccount(name,pin);
+        array.addAccountList(newAccount);
     }
+
+
+
 }
