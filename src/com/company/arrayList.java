@@ -20,7 +20,7 @@ public class arrayList {
     }
 
     public static void printArray(){
-        for(int i=0; i<=account.size(); i++){
+        for(int i=0; i<account.size(); i++){
             System.out.println(i+1 + ". - " + account.get(i));
         }
     }
